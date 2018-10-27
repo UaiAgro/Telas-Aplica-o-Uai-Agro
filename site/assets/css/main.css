@@ -1,0 +1,38 @@
+/*Reset*/
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+* a:hover {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+* .bt,
+* img {
+  display: inline-block;
+}
+* audio,
+* img,
+* iframe,
+* video,
+* header,
+* section,
+* main,
+* footer {
+  width: 100%;
+}
+/*buttons*/
+.bt {
+  box-shadow: 1px 2px 3px 0px #333;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.02em;
+  color: #fff;
+  font-size: 1em;
+  font-family: arial;
+}

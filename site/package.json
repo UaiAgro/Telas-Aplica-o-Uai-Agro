@@ -1,0 +1,19 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Layout UaiAgro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UaiAgro/Telas-Aplica-o-Uai-Agro.git"
+  },
+  "author": "André rodrigues (xor)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UaiAgro/Telas-Aplica-o-Uai-Agro/issues"
+  },
+  "homepage": "https://github.com/UaiAgro/Telas-Aplica-o-Uai-Agro#readme"
+}
