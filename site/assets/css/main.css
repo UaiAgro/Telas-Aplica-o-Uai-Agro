@@ -159,7 +159,7 @@
 /*Navbar*/
 .navbar {
   background-color: transparent;
-  padding: 21px 0;
+  padding: 26px 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -167,31 +167,9 @@
 .navbar .responsive-button {
   display: block;
   position: absolute;
-  right: 0px;
-  top: 10px;
-  width: 37px;
-}
-.navbar .responsive-button .bars {
-  background-color: #eee;
-  height: 4px;
-  position: relative;
   right: 3px;
-  top: 10px;
-  width: 28px;
-}
-.navbar .responsive-button .bars:after,
-.navbar .responsive-button .bars:before {
-  background-color: #eee;
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 28px;
-}
-.navbar .responsive-button .bars:after {
-  top: -8px;
-}
-.navbar .responsive-button .bars:before {
-  bottom: -8px;
+  top: 7px;
+  width: 37px;
 }
 .navbar .links {
   background-color: #fff;
