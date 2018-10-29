@@ -1,0 +1,60 @@
+.navbar
+    background-color transparent  
+    padding 21px 0
+    position fixed
+    width 100%
+    z-index 1
+    .responsive-button
+        display block
+        position absolute
+        right 0px
+        top 10px
+        width 37px
+        .bars
+            background-color #eee
+            height 4px 
+            position relative
+            right 3px
+            top 10px
+            width 28px
+        .bars:after, .bars:before
+            background-color #eee
+            content ""
+            position absolute 
+            height 4px
+            width 28px
+        .bars:after
+            top -8px
+        .bars:before
+            bottom -8px
+        
+    .links
+        background-color #fff
+        display none
+        margin 0 auto 
+        width 99%
+        li 
+            display block 
+            padding 15px
+            a 
+                color #d6d6d6
+                font-family arial
+                font-size 12px
+                text-decoration none
+    @media(min-width: 760px)
+        .responsive-button
+            display none
+        .links
+            background-color transparent
+            display block
+            width 58%
+            li 
+                display inline
+                padding 15px 27px
+.menu-diferente
+    background-color #fff
+    box-shadow 1px 1px 6px 0px rgba(51, 51, 51, 0.09)
+    .links
+        li 
+            a 
+                color rgba(51, 51, 51, 0.51)

@@ -6,13 +6,14 @@
 .row 
     display flex 
     flex-direction column
+    position relative
     &::after 
         content ""
         clear both
         display table
+.padding-col
+    padding 17px 38px
 @media(min-width: 48em)
-    .container
-        width 80%
     .row
         flex-direction row 
     .col-1 

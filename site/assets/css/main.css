@@ -32,13 +32,30 @@
 }
 /*buttons*/
 .bt {
-  box-shadow: 1px 2px 3px 0px #333;
+  box-shadow: 1px 2px 3px 0px rgba(51,51,51,0.29);
   border-radius: 5px;
   border-style: solid;
-  border-width: 0.02em;
+  border-width: 1px;
   color: #fff;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: arial;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 1em;
+  text-decoration: none;
+}
+.bt.bt-green {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+.bt.bt-clean {
+  background-color: transparent;
+  border-color: #fff;
+  transition: 1s linear background;
+}
+.bt.bt-clean:hover {
+  background: #fff;
+  color: #8bc34a;
 }
 /*grids*/
 .container {
@@ -50,16 +67,17 @@
 .row {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+.padding-col {
+  padding: 17px 38px;
+}
 @media (min-width: 48em) {
-  .container {
-    width: 80%;
-  }
   .row {
     flex-direction: row;
   }
@@ -106,7 +124,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
 }
 .banner .overlay {
   background-color: rgba(51,51,51,0.212);
@@ -129,10 +146,216 @@
   font-size: 2em;
 }
 @media (min-width: 48em) {
+  .banner .container {
+    padding: 10em 0;
+  }
   .banner .container h1 {
     font-size: 8em;
   }
   .banner .container p {
-    margin: 10px 0 0 5em;
+    margin: 10px 0 0 3em;
+  }
+}
+/*Navbar*/
+.navbar {
+  background-color: transparent;
+  padding: 21px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.navbar .responsive-button {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 37px;
+}
+.navbar .responsive-button .bars {
+  background-color: #eee;
+  height: 4px;
+  position: relative;
+  right: 3px;
+  top: 10px;
+  width: 28px;
+}
+.navbar .responsive-button .bars:after,
+.navbar .responsive-button .bars:before {
+  background-color: #eee;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 28px;
+}
+.navbar .responsive-button .bars:after {
+  top: -8px;
+}
+.navbar .responsive-button .bars:before {
+  bottom: -8px;
+}
+.navbar .links {
+  background-color: #fff;
+  display: none;
+  margin: 0 auto;
+  width: 99%;
+}
+.navbar .links li {
+  display: block;
+  padding: 15px;
+}
+.navbar .links li a {
+  color: #d6d6d6;
+  font-family: arial;
+  font-size: 12px;
+  text-decoration: none;
+}
+@media (min-width: 760px) {
+  .navbar .responsive-button {
+    display: none;
+  }
+  .navbar .links {
+    background-color: transparent;
+    display: block;
+    width: 58%;
+  }
+  .navbar .links li {
+    display: inline;
+    padding: 15px 27px;
+  }
+}
+.menu-diferente {
+  background-color: #fff;
+  box-shadow: 1px 1px 6px 0px rgba(51,51,51,0.09);
+}
+.menu-diferente .links li a {
+  color: rgba(51,51,51,0.51);
+}
+/*Sections*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.main {
+  display: flex;
+  flex-direction: column;
+}
+section article {
+  margin: 0 auto;
+  width: 99%;
+}
+section article .container {
+  padding: 4em 0;
+}
+section article h2,
+section article p {
+  color: rgba(93,92,92,0.75);
+  font-family: 'Raleway', sans-serif;
+}
+section article h2 {
+  font-size: 30px;
+}
+section article p {
+  font-size: 18px;
+}
+@media (min-width: 760px) {
+  section article p {
+    font-size: 23px;
+  }
+}
+section .overlay {
+  background-color: rgba(51,51,51,0.59);
+  width: 100%;
+}
+.sobre {
+  background-color: rgba(249,249,249,0.46);
+}
+.conteudo-sobre {
+  background-color: #fff;
+  box-shadow: 1px 2px 3px 1px rgba(51,51,51,0.12);
+}
+.divider {
+  background-image: url("../img/divider.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25em;
+  max-height: 25em;
+}
+.divider .overlay {
+  height: 25em;
+}
+.divider .container {
+  padding: 10em 0;
+}
+.divider .container h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.contato {
+  background-image: url("../img/campo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contato .form-contato {
+  margin: 0 auto;
+  width: 99%;
+}
+.contato .form-contato input[type="text"],
+.contato .form-contato input[type="email"],
+.contato .form-contato textarea {
+  background-color: transparent;
+  display: block;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.contato .form-contato input[type="text"],
+.contato .form-contato input[type="email"] {
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.678);
+  padding: 10px 0;
+}
+.contato .form-contato input[type="text"]::placeholder,
+.contato .form-contato input[type="email"]::placeholder {
+  color: #fff;
+}
+.contato .form-contato textarea {
+  border: 1px solid rgba(255,255,255,0.678);
+  margin-top: 40px;
+}
+@media (min-width: 760px) {
+  .contato .form-contato {
+    width: 50%;
+  }
+}
+/*Solucoes*/
+.solucoes {
+  margin: 1em auto;
+  width: 62%;
+}
+.solucoes a {
+  border: 1px solid #eee;
+  border-radius: 50%;
+  box-shadow: 1px 1px 6px 0px rgba(51,51,51,0.188);
+  display: block;
+  height: 200px;
+  margin-top: 28px;
+  padding: 52px 0;
+  text-decoration: none;
+  width: 200px;
+  transition: 1s linear background;
+}
+.solucoes a img {
+  width: 50%;
+}
+@media (min-width: 760px) {
+  .solucoes {
+    width: 99%;
+  }
+  .solucoes a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 40px;
+  }
+  .solucoes a img {
+    width: 112px;
   }
 }

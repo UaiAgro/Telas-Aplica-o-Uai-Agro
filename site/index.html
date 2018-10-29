@@ -1,49 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <!-- IE -->
-        <meta http-equiv="cleartype" content="on">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>UaiAgro</title>
-        <!-- Mobile -->
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--CSS-->
-        <link href="assets/css/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <main class="main" role="main">
-            <header class="banner">
-                <div class="overlay">
+<head>
+    <meta charset="UTF-8">
+    <!-- IE -->
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UaiAgro</title>
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS-->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main" role="main">
+       <nav class="navbar" id="menu">
+           <div class="responsive-button" id="clica">
+               <div class="bars"></div>
+           </div><!--/button-responsive-->
+           <ul class="links" id="lista">
+               <li><a href="#topo">INÍCIO</a></li>
+               <li><a href="#sobre">A-PLATAFORMA</a></li>
+               <li><a href="">NOSSAS SOLUÇÕES</a></li>
+               <li><a href="">CONTATO</a></li>
+               <li><a href="">NOTÍCIAS</a></li>
+               <li><a href="">AGRO-DICAS</a></li>
+           </ul>
+       </nav><!--/menu-->
+        <header class="banner" id="topo">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>UaiAgro</h1>
+                            <p>Solução em agronegócio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Overlay-->
+        </header>
+        <!--/header-->
+        <section class="sobre">
+            <article id="sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/sobre.jpg" alt="Imagem-homem-do-campo-com-notebook">
+                        </div>
+                        <div class="col-6 conteudo-sobre padding-col">
+                            <h2>A PLATAFORMA</h2><br>
+                            <p>
+                                A UaiAgro é uma startup mineira que desenvolve tecnologias com foco em agricultura de precisão, visando o aumento da eficiência e produtividade agrícola. Trabalhamos com sistemas que realizam o gerenciamento de atividades rurais, análise de clima, produtividade e sistemas de cotações em uma só plataforma, onde tratamos tais dados em busca das melhores decisões, além da utilização de drones para análise e mapeamento das áreas de plantio. Buscamos aumentar a lucratividade do produtor através da alta produtividade da sua cultura, de modo a agregar valor ao seu produto final e direcionar os seus investimentos relacionados ao plantio de forma inteligente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section><!--/sobre-->
+        <section class="divider">
+            <div class="overlay">
+                <article>
                     <div class="container">
                         <div class="row">
                             <div class="col-12 text-center">
-                               <h1>UaiAgro</h1>
-                                <p>Solução em agronegócio</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/Overlay-->
-            </header><!--/header-->
-            <section>
-                <article id="sobre">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="assets/img/sobre.jpg" alt="Imagem-homem-do-campo-com-notebook">
-                            </div>
-                            <div class="col-6">
-                                <h2>A PLATAFORMA</h2>
-                                <p>
-                                    A UAIAGRO é uma startup mineira que desenvolve tecnologias com foco em agricultura de precisão, visando o aumento da eficiência e produtividade agrícola. Trabalhamos com sistemas que realizam o gerenciamento de atividades rurais, análise de clima, produtividade e sistemas de cotações em uma só plataforma, onde tratamos tais dados em busca das melhores decisões, além da utilização de drones para análise e mapeamento das áreas de plantio. Buscamos aumentar a lucratividade do produtor através da alta produtividade da sua cultura, de modo a agregar valor ao seu produto final e direcionar os seus investimentos relacionados ao plantio de forma inteligente.
-                                </p>
+                                <h2>Podemos fazer sua fazenda gerar lucros</h2>
+                                <a href="" class="bt bt-clean">
+                                    CONFIRA NOSSAS SOLUÇÕES
+                                </a>
                             </div>
                         </div>
                     </div>
                 </article>
-            </section>
-        </main>
-    </body>
-</html>
+            </div><!--/overlay-->
+        </section>
+        <section>
+            <article id="servicos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 padding-col text-center">
+                            <h2>NOSSAS SOLUÇÕES</h2><br>                            
+                            <ul class="solucoes">
+                                <a href="" class="green">
+                                    <img src="assets/img/plantacao.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/img/trator.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/img/clima.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/img/grafico.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/img/vaca.png" alt="">
+                                </a>
+                            </ul><!--/lista-->
+                            <a href="" class="bt bt-green">FAÇA UM TESTE HOJE MESMO DA NOSSA PLATAFORMA</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section><!--/servicos-->
+        <section class="contato">
+            <div class="overlay">
+                <article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="" class="form-contato">
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section><!--/contato-->
+    </main>
+
+    <!--scripts-->
+    <script src="assets/js/jquery.js"></script> 
+    <script src="assets/js/main.js"></script>
+</body>

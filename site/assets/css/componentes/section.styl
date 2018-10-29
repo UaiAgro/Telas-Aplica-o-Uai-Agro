@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.main
+    display flex
+    flex-direction column
+section
+    article 
+        margin 0 auto
+        width 99%
+        .container
+            padding 4em 0
+        h2, p  
+            color rgba(93, 92, 92, 0.75)
+            font-family 'Raleway', sans-serif
+        h2 
+            font-size 30px 
+        p 
+            font-size 18px
+        @media(min-width: 760px)
+            p 
+                font-size 23px
+    .overlay
+        background-color rgba(51, 51, 51, 0.59)
+        width 100%                
+.sobre 
+    background-color rgba(249, 249, 249, 0.46)
+.conteudo-sobre
+    background-color #fff
+    box-shadow 1px 2px 3px 1px rgba(51, 51, 51, 0.12)
+.divider
+    background-image url(../img/divider.jpg)
+    background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    min-height 25em
+    max-height 25em
+    .overlay
+        height 25em
+    .container
+        padding 10em 0
+        h2
+            color #fff
+            text-transform uppercase
+.contato
+    background-image url(../img/campo.jpg)
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    .form-contato
+        margin 0 auto 
+        width 99%
+        input[type="text"], input[type="email"], textarea
+            background-color transparent
+            display block
+            margin 20px 0 0 0
+            width 100%
+        input[type="text"], input[type="email"] 
+            border none 
+            border-bottom 1px solid #ffffffad 
+            padding 10px 0
+        input[type="text"]::placeholder, input[type="email"]::placeholder
+            color #fff
+        textarea
+            border 1px solid #ffffffad
+            margin-top 40px
+        @media(min-width: 760px)
+            width 50%
+            
